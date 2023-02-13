@@ -23,6 +23,7 @@ export default async function handler(
       model: "text-davinci-003",
       prompt: text,
       max_tokens: 1000,
+      temperature: 0.7,
     });
     res.status(200).json({ prompt: completion.data.choices[0].text! });
   } catch (err) {

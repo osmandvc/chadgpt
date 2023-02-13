@@ -1,3 +1,4 @@
+import ClientProvider from "@/components/ClientProvider";
 import "./globals.css";
 
 export default function RootLayout({
@@ -12,7 +13,11 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className="no-scrollbar">{children}</body>
+
+      <body className="no-scrollbar">
+        <ClientProvider />
+        {children}
+      </body>
     </html>
   );
 }
