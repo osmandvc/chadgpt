@@ -11,7 +11,7 @@ const FrontPage = (props: Props) => {
           Welcome to ChadGPT.
         </h1>
         <span className="text-zinc-400 md:text-xl">
-          It's like ChatGPT, just faster, with more customization and no
+          It is like ChatGPT, just faster, with more customization and no
           downtimes.
         </span>
         <button className="self-start p-4 font-semibold transition border md:self-center rounded-xl bg-zinc-900 border-zinc-100 hover:bg-zinc-700">
